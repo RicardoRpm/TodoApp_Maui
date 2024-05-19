@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TodoApp_WithMaui.View.LoginPage"
+             Title="LoginPage">
+    
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="287"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Path 
+            Stroke="Red" 
+            Data="m-0.99,-1.58701l417.00002,0l0,173.01941c-156.50001,146 -248.50001,145.92357 -417.00002,28.467l0,-201.48641z" 
+            Fill="Red"/>
+
+        <Image WidthRequest="250" Source="dotnet_bot.png"></Image>
+
+        <VerticalStackLayout Grid.Row="2" Margin="30,0,20,0" Spacing="5">
+            <Label Text="Login" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Center" ></Label>
+            <Entry></Entry>
+            <Entry></Entry>
+            <Button Background="Red" Text="Click Aqui"></Button>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
